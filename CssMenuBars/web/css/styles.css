@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28jan, 2023, 7:24:59 PM
+    Author     : adarsh
+*/
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+.header
+{
+    height: 100px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+}
+.content
+{
+    height: 600px;
+    //background: rgb(230,230,231);
+    //background: linear-gradient(0deg, rgba(230,230,231,1) 0%, rgba(251,251,252,1) 89%, rgba(255,255,255,1) 100%); 
+}
+.footer
+{
+    height: 100px;
+    background-color: black;
+}
+.logo_div
+{
+    height: 50px;
+    width: 100px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.login_div
+{
+    height: 50px;
+    width: 400px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.logo_style
+{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+}
+.textfield_design
+{
+    padding: 5px 10px;
+}
+.img_divv
+{
+    height: 600px;
+    width: 50%;
+    float: left;
+}
+.reg_divv
+{
+    height: 600px;
+    width: 50%;
+    float: left;
+}
+.content_left_div
+{
+    height: auto;
+    width: auto;
+    float: left;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.content_right_div
+{
+    height: auto;
+    width: 70%;
+    float: left;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.textfield_design_two
+{
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #b1b0b0;
+}
