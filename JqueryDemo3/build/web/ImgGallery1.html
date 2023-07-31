@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Jquery/jquery.js"> </script>
+        <script>
+            $(document).ready(function(){
+                $(".gallery_img").click(function(){
+                    var img_src=$(this).attr("src");
+                    $(".main").css("display","block");
+                    $(".image").css("display","block");
+                  
+                    $("#show_img").attr("src",img_src);
+                });
+                $(".main").click(function(){
+                    $(".image").css("display","none");
+                    $(".main").css("display","none");
+                });
+                
+            });            
+            
+            
+            
+        </script>
+        <style>
+            .main{
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                opacity: .3;
+                position: absolute;
+                display: none;
+            }
+            .image{
+                
+                height: 450px;
+                width:  450px;
+                background-color: white;
+                top: 25%;
+                left: 35%;
+                position: absolute;
+                
+            }
+          </style>
+    </head>
+    <body>
+        <div class="main"> Main div </div>
+        <div class="image">
+            <img src="" height="100%" width="100%" id="show_img"/>
+        </div>
+        <img src="Images/1.jpg" height="200" width="200" alt="img1"  class="gallery_img"/>
+        <img src="Images/2.jpg" height="200" width="200"  alt="img2" class="gallery_img"/>
+        <img src="Images/3.jpg" height="200" width="200" alt="img3"  class="gallery_img"/>
+        <img src="Images/4.jpg" height="200" width="200" alt="img4"  class="gallery_img"/>
+       </body>
+</html>

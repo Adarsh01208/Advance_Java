@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script> 
+           var i=0;
+           var img_src=new Array();
+           
+           img_src[0]="Images/11.jpg";
+           img_src[1]="Images/22.jpg";
+           img_src[2]="Images/33.jpg";
+        
+           function swapImage(){
+              // alert(img_src[i]);
+               document.slide.src=img_src[i];
+               if(i< img_src.length-1)
+               {
+                   i++;
+                   
+               }
+               else
+               {
+                   i=0;
+               }
+               setTimeout("swapImage()",2000);
+           }
+           window.onload=swapImage;
+        
+        </script>
+        <style>
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+            .Img_Slider_div{
+                
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                position: absolute;
+                text-align: center;
+            }
+            .slide_img{
+                padding: 10px;
+                background-color: #cccccc;
+                border: 2px solid black;
+             }
+            h1{
+                text-align: center;
+            }
+         </style>
+    </head>
+    <body>
+       <h1>Slider Using JavaScript</h1>
+        <div class="Img_Slider_div">
+            <img src="Images/11.jpg" name="slide" class="slide_img" alt="sliderimage" />
+        </div>
+    </body>
+</html>

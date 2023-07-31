@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Jquery/jquery.js">   </script>
+        <script src="Jquery/slidercycle.js"> </script>
+        <script>
+            $(document).ready(function(){
+                $("#slider_img_div").cycle({
+                     fx: 'wipe,zoom',
+                    sync: false,
+                    delay:-2000
+                });
+            });
+         </script>
+        <style>
+            #slider_main_div{
+                
+                height: 320px;
+                width: 100%;
+            }
+            #slider_img_div{
+                height: 320px;
+                width: 920px;
+                background-color: #cccccc;
+                overflow: hidden;
+                margin-left: 320px;
+            }
+              .img_src
+            {
+                padding: 10px;
+                background-color: #cccccc;
+            }
+            h1{
+                text-align: center;
+            }
+         </style>
+    </head>
+    <body>
+        <h1>Slider Using Jquery</h1>
+          <div id="slider_main_div">
+            <div id="slider_img_div">
+                <img src="images/11.jpg" alt="" class="img_src" />
+                <img src="images/22.jpg" alt="" class="img_src" />
+                <img src="images/33.jpg" alt="" class="img_src" />
+            </div>
+        </div>
+    </body>
+</html>

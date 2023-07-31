@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Jquery/jquery.js"></script>
+        <script src="Jquery/Jquerygallery2.js"> </script>
+        <style>
+            .main{
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                opacity: .3;
+                position: absolute;
+                display: none;
+            }
+            .image{
+                height: 400px;
+                width: 400px;
+                background-color: white;
+                position: absolute;
+                top: 25%;
+                left: 35%;
+               display: none;
+            }
+            .gallery_img:hover{
+                cursor: pointer;
+            }
+            .next{
+                left: 94%;
+                position: absolute;
+               background-color: black;
+               color: white;
+               padding: 5px;
+               cursor: pointer;
+            }
+            .prev{
+              //  float: left;
+                position: absolute;
+                background-color: black;
+                color: white;
+                padding: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main"> main div</div>
+        <div class="image">
+            <div class="next"> &#8649; </div>
+            <div class="prev"> &#8647; </div>
+            <img  height="100%" width="100%" id="show_img" />
+        </div>
+        <img src="Images/1.jpg" height="200" width="200" class="gallery_img" id="1" />
+        <img src="Images/2.jpg" height="200" width="200" class="gallery_img" id="2" />
+        <img src="Images/3.jpg" height="200" width="200" class="gallery_img" id="3" />
+        <img src="Images/4.jpg" height="200" width="200" class="gallery_img" id="4" />
+    </body>
+</html>
