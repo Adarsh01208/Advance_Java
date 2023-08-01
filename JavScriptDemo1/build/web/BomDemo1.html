@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var mywindow;
+            function bomdemo()
+            {
+           
+                mywindow=open("", "mywindow", "width=300, height=300");
+                mywindow.document.write("this is my created window");
+            }
+            
+            function closewindow()
+            {
+                mywindow.close();
+            }
+            
+             //window.alert("ok");
+                //alert("okkk");
+                
+                /*var v=confirm("Are you sure you want to delete this entry ?");
+                if(v===true)
+                {
+                    alert("deleted successfully");
+                }
+                else
+                {
+                    alert("Cancel");
+                }*/
+        
+//                var v=prompt("Enter your name :- ");
+//                alert("hi : "+v);
+          
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <input type="submit" value="click me" onclick="bomdemo()" />
+        <input type="submit" value="close" onclick="closewindow()" />
+    </body>
+</html>

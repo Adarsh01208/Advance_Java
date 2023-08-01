@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="jquery/jquery.js"> </script>
+        
+        <script>
+            $(document).ready(function(){
+               $("div ,div").click(function(){
+                   $(this).hide();
+               });
+                
+            });
+            
+        </script>
+        <style>
+           .divstyle
+           {
+               height: 100px;
+               width: 100px;
+               background-color: red;
+               margin-top: 20px;
+              
+           }
+         </style>
+    </head>
+    <body>
+        <div class="divstyle">
+            div1
+        </div>
+        <div class="divstyle">
+            div2
+        </div>
+    </body>
+</html>

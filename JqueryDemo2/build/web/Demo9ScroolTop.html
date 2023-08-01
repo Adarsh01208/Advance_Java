@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Jquery/jquery.js">   </script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                   var pos =$("div").scrollTop();
+                   alert(pos+ "px");
+                });
+            });
+            
+            
+            
+        </script>
+    </head>
+    <body>
+        <div style="height:200px; width: 100px;overflow: scroll; border: 1px solid black">
+             this is demo 1<br> this is demo 1<br> this is demo 1<br> this is demo 1<br> this is demo 1<br> this is demo 1<br> this is demo 1<br> this is demo 1<br> this is demo 1<br>
+        </div>
+        <button> Get position</button>
+    </body>
+</html>

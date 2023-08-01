@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var reg=/h[a-zA-Z0-9]llo/;  // [] it can contain any character
+            var reg=/h[abc]llo/;           // [abc] it can contain only a, b and c
+            var reg=/h[^abc]llo[a-z]/;          // [^ ] it will not contain specified character
+            var str="hdlloa, this is my first demo";
+            
+            var result=reg.test(str);
+            console.log(result);
+            
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>

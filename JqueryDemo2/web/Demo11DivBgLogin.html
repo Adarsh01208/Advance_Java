@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Jquery/jquery.js">  </script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $(".maindiv").show();
+                     $(".logindiv").show().animate({
+                        left: '300px',
+                        top : '200px'
+                });
+            });
+            
+            $(".maindiv").click(function (){
+                    $(".maindiv").hide();
+                    $(".logindiv").hide();
+                });
+            });
+            
+            
+        </script>
+        <style>
+            body{
+                margin: 0px;
+                padding:0px;
+            }
+            .maindiv{
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                display: none;
+                opacity: .2;
+                position: fixed;
+            }
+            .logindiv{
+                 
+                display: none;
+                height: 30%;
+                width: 40%;
+                background-color: white;
+                border-radius: 20px;
+                position: fixed;
+                padding: 20px;
+               
+            }
+            #btn1{
+                cursor: pointer;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="maindiv">I am in main class</div>
+        <div class="logindiv">
+            <h3>Login Here</h3>
+        <input type="email" placeholder="enter email" /><br>
+        <input type="password" placeholder="password" /><br>
+        <input type="submit" value="Login"/>
+        </div>
+        <button id="btn1"> Login</button>
+    </body>
+</html>
