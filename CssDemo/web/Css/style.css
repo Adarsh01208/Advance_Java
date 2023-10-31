@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 Jan, 2023, 10:05:30 AM
+    Author     : adars
+*/
+
+.button_design
+{
+    transition: 2s;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.button_design:hover
+{
+   transition: 2s;
+   background-color:  #938585;
+   border-radius: 10px;
+   color:yellow;
+}
+.textfield_design
+{
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px #938585 solid;
+}
+.textfield_design:focus
+{
+    background-color: #e9e4e4;
+}
+.textfield_design:hover
+{
+    box-shadow: 0px 0px 0px 2px aquamarine;
+        
+}
+
+/* table tag css */
+
+.person_details_table
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.person_details_table td, .person_details_table th
+{
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+.person_details_table th
+{
+    background-color: #009b00;
+    color: white;  
+}
+.person_details_table tr:nth-child(even)
+{
+    background-color: #ebeceb;
+}
+.person_details_table tr:hover
+{
+    background-color: #c5c8c5;
+}
+
+/* sytle for pseudo element */
+p::first-line
+{
+    color: red;
+    font-size: 20px;
+}
+
+
+/* a tag css */
+a:link
+{
+    text-decoration: none;
+    color: white;
+}
+a:visited
+{
+    color: #e1dede;
+}
+a:hover
+{
+    color: red;
+}
+a
+{
+    padding: 5px 10px;
+    border: 1px #999898 solid;
+    background-color: #807f7f;
+}
