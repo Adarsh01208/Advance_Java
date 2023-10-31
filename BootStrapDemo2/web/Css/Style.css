@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 Feb, 2023, 1:59:36 PM
+    Author     : adars
+*/
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+{
+   border: 1px solid black;
+   padding: 10px 20px;
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12
+{
+   border: 1px solid black;
+   padding: 20px 10px 20px 20px;
+}
+.gray
+{
+    background-color: gray;
+}
+.pink{
+    background-color: pink;
+}
+.green{
+    background-color: yellowgreen;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: #0d6efd;
+}
+#mynavbar ul{
+    list-style: none;
+}
+#mynavbar ul li{
+   float: left;
+   padding: 10px;
+}
+#mynavbar ul li a{
+   padding: 10px ;
+}
