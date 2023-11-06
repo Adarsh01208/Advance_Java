@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .reddiv
+            {
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                text-align: center;
+            
+            }
+            .yellodiv
+            {
+                height: 100px;
+                width: 100px;
+                background-color: yellow;
+                text-align:inherit;  
+
+            }
+
+        </style>
+        <script>
+            function redbox()
+            {
+                document.getElementById("body1").style.background="red";
+            }
+            function yellodiv()
+            {
+                document.getElementById("body1").style.background="yellow";
+            }
+            function tranparentbg()
+            {
+                document.getElementById("body1").style.background="transparent";
+            }
+        </script>
+    </head>
+    <body id="body1">
+        <div class="reddiv" onmouseover=" redbox()" onmouseout="tranparentbg()">
+            red
+        </div>
+        <div class="yellodiv" onmouseover="yellodiv()" onmouseout="tranparentbg()">
+            yellow
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            
+            function getvalue()
+            {
+                var name =document.form1.name1.value;
+                
+                var name= document.getElementById("name11").value;
+              
+              var name = document.getElementsByName("name1").value;
+             
+                alert("hello :" + name);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form1">
+            <input type="text" id="name11" name="name1" placeholder="Enter Name" />
+            <input type="submit" value="click me" onclick="getvalue()" />
+        </form>
+    </body>
+</html>

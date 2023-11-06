@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script>
+            var reg=/my/;
+            var str="this is \n my first demo \nand also my second demo";
+            
+            var result=reg.exec(str);   //this methods return an array if matched otherwise returns null
+            console.log(result);
+    
+            //--------------------------
+            
+            var reg=/myy/;
+            var str="this is my first demo";
+            
+            var result=reg.test(str);   //it returns true or false if matched or not
+            console.log(result);
+    
+            //--------------------------
+            
+            var reg=/my/;
+            var str="this is my first demo";
+            
+            //var result=reg.match(str);  //wrong
+            var result=str.match(reg);  //it returns array if matched otherwise null if not matched
+            console.log(result);
+            
+            //--------------------------
+            var reg=/myy/;
+            var str="this is my first demo";
+            
+            //var result=reg.search(str);   //wrong
+            var result=str.search(reg); //it returns the index position if matched else -1 if not matched
+            console.log(result);
+    
+    
+            //--------------------------
+            var reg=/my/g;
+            var str="this is my first demo and also my second demo";
+            
+            //var result=reg.replace(str);   //wrong
+            var result=str.replace(reg, 'myyy');    //it replace the string
+            console.log(result);
+            
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

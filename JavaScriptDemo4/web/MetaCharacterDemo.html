@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            
+            var reg=/^my/;  //it will match if string starts with my
+            var str="hello, this is my first demo, hello, please respond";
+            
+            var result=reg.test(str);
+            console.log(result);
+    
+            //----------------------------------
+            var reg=/respond$/;  //it will match if string ends with respond or not
+            var str="hello, this is my first demo, hello, please respond";
+            
+            var result=reg.test(str);
+            console.log(result);
+            
+            //-----------------------------------
+            var reg=/h.llo/;  //it will match exactly one character
+            var str="heello, this is my first demo";
+            
+            var result=reg.test(str);
+            console.log(result);
+            
+            //-----------------------------------
+            var reg=/h*llo/;  //it will match multi characters
+            var str="hello, this is my first demo";
+            
+            var result=reg.test(str);
+            console.log(result);
+            
+            //-----------------------------------
+            var reg=/h?llo?/;  //? after character means that character is optional
+            var str="elleee, this is my first demo";
+            
+            var result=reg.test(str);
+            console.log(result);
+            
+            //------------------------------------
+            var reg=/h\*llo/;  // the predefined meaning will not work
+            var str="hello, this is my first demo";
+            
+            var result=reg.test(str);
+            console.log(result);
+        
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>

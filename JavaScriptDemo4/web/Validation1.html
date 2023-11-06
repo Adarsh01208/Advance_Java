@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            
+            function checkValidation()
+            {
+                var name_pattern=/^[a-z A-Z]{3,30}$/;
+                var user_name=document.form1.name1.value;
+                
+                var phoneno_pattern=/^[0-9]{10}/;
+                var user_phoneno=document.form1.phno1.value;
+                
+                if(!name_pattern.test(user_name))
+                {
+                    document.getElementById("nameerr").innerHTML="Name is not Valid";
+                    return false;
+                }
+                else if(!phoneno_pattern.test(user_phoneno))
+                {
+                    document.getElementById("phnoerr").innerHTML="phoneno is not valid";
+                    return false;
+                }
+                
+                else
+                {
+                    alert("valid");
+                }
+            function val(a)
+            {
+                document.getElementById(a).innerHTML="";
+            }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form name="form1" onsubmit="return checkValidation()">
+            <input type="text" placeholder="Enter name" name="name1" onkeyup="val('nameerr')" />
+            <span id="nameerr"> </span> <br> <br>
+            <input type="text" placeholder="Enter Phone No" name="phno1" onkeyup="val('phnoerr')" />
+            <span id="phnoerr"> </span> <br> <br>
+            <input type="submit" value="Register" />
+        </form>
+    </body>
+</html>
